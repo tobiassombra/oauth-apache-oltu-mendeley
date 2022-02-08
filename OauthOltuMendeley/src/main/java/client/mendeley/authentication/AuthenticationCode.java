@@ -1,4 +1,4 @@
-package com.mendeley.authentication;
+package client.mendeley.authentication;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

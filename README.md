@@ -1,7 +1,9 @@
 # oauth-apache-oltu-mendeley
-<h4>Aplicação que realiza autenticação Oauth 2.0 usando apache oltu para a plataforma Mendeley</h4>
+<h4>Aplicação que realiza requisições http no cliente para fazer autenticação Oauth 2.0 usando apache oltu para a plataforma Mendeley</h4>
 
 Esta aplicação tem como objetivo realizar autenticação no padrão Oauth 2.0 usando Apache Oltu. Foi utilizada a plataforma Mendeley como referência, mas é possível aplicar o código em outras APIs que utilizam este padrão de autenticação. Todas as informações de entrada e saída são exibidas no console da IDE.
+
+O projeto realiza requisições http do lado do cliente para solicitar um token de acesso ao servidor do Mendeley.
 
 **NOTA**: A aplicação realiza apenas a autenticação Oauth. Se quiser realizar consultas na plataforma, será necessário desenvolver um código para este fim.
 

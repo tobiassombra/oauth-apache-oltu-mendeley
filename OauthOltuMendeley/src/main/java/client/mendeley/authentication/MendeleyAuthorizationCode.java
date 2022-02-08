@@ -1,4 +1,4 @@
-package com.mendeley.authentication;
+package client.mendeley.authentication;
 
 import java.awt.Desktop;
 import java.io.IOException;
@@ -16,17 +16,17 @@ import org.apache.oltu.oauth2.common.message.types.GrantType;
 public class MendeleyAuthorizationCode {
 
     private final String ENDPOINT = "https://api.mendeley.com/oauth/authorize";
-    private final String CLIENT_ID = "";
-    private final String REDIRECT_URI = "http://localhost:63342/OauthOltuMendeley/OauthOltuMendeley.main/com/mendeley/url/index.html";
+    private final String CLIENT_ID = "11884";
+    private final String REDIRECT_URI = "http://localhost:63342/OauthOltuMendeley/OauthOltuMendeley.main/client/mendeley/url/index.html";
     private final String RESPONSE_TYPE = "code";
     private final String SCOPE = "all";
-    private final String CLIENT_SECRET = "";
+    private final String CLIENT_SECRET = "8Bf2DsCF7sRw7M0y";
     private final String TOKEN_LOCATION = "https://api.mendeley.com/oauth/token";
     private String code = "";
     private OAuthClientRequest request;
     OAuthAccessTokenResponse oauthResponse;
 
-    private Scanner entrada = new Scanner(System.in);
+    private Scanner scan = new Scanner(System.in);
 
     public void oauthAuthorizationCode() throws OAuthSystemException, IOException, URISyntaxException {
         //Pega o code para gerar o token
@@ -46,7 +46,7 @@ public class MendeleyAuthorizationCode {
         System.out.println("NOTA: Se der erro 404 após a tela de login, atualize a página clicando no link e pressionando ENTER. Atualizar pelo f5 não funciona");
         System.out.println("Após fazer login, copie o código(?code=...) gerado no final do link que está no topo do navegador e cole em sua aplicação.");
         System.out.println("Insira o código gerado:");
-        this.code = entrada.nextLine();
+        this.code = scan.nextLine();
 
     }
 
