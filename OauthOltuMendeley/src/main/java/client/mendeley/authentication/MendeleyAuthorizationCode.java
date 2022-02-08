@@ -16,11 +16,11 @@ import org.apache.oltu.oauth2.common.message.types.GrantType;
 public class MendeleyAuthorizationCode {
 
     private final String ENDPOINT = "https://api.mendeley.com/oauth/authorize";
-    private final String CLIENT_ID = "11884";
+    private final String CLIENT_ID = "";
     private final String REDIRECT_URI = "http://localhost:63342/OauthOltuMendeley/OauthOltuMendeley.main/client/mendeley/url/index.html";
     private final String RESPONSE_TYPE = "code";
     private final String SCOPE = "all";
-    private final String CLIENT_SECRET = "8Bf2DsCF7sRw7M0y";
+    private final String CLIENT_SECRET = "";
     private final String TOKEN_LOCATION = "https://api.mendeley.com/oauth/token";
     private String code = "";
     private OAuthClientRequest request;
