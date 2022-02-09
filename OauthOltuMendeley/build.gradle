@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.mendeley'
+group 'client.mendeley'
 version '1.0-SNAPSHOT'
 
 repositories {
